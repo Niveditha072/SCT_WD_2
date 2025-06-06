@@ -1,0 +1,83 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  transition: background 0.3s, color 0.3s;
+}
+
+.app {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  flex-direction: column;
+  position: relative;
+}
+
+.app.dark {
+  background: #121212;
+  color: white;
+}
+
+.app.light {
+  background: #f3f3f3;
+  color: white;
+}
+
+.stopwatch {
+  background: #1e1e1e;
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow: 0 0 30px rgba(0, 255, 255, 0.1);
+}
+
+h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+.buttons button {
+  margin: 8px;
+  padding: 12px 24px;
+  font-size: 16px;
+  background-color: #00adb5;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.buttons button:hover {
+  background-color: #007e85;
+}
+
+.lap-list {
+  list-style: none;
+  padding: 0;
+  margin-top: 20px;
+}
+
+.lap-list li {
+  margin-bottom: 8px;
+  font-size: 1.1rem;
+  color: #ccc;
+}
+
+.toggle-theme {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  padding: 8px 12px;
+  border: none;
+  background: #00adb5;
+  color: white;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.toggle-theme:hover {
+  background: #007e85;
+}
