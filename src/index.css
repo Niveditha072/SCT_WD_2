@@ -81,3 +81,11 @@ h1 {
 .toggle-theme:hover {
   background: #007e85;
 }
+/* You can keep this minimal if using App.css for styling */
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #111b2c;
+  font-family: "Segoe UI", sans-serif;
+}

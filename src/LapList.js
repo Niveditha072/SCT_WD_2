@@ -1,4 +1,4 @@
-import React from 'react';
+/*import React from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 
 const LapList = ({ laps }) => {
@@ -21,4 +21,4 @@ const LapList = ({ laps }) => {
   );
 };
 
-export default LapList;
+export default LapList;*/

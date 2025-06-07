@@ -1,18 +1,18 @@
-import React, { useState } from 'react';
-import Stopwatch from './Stopwatch';
-import './index.css';
+import React from "react";
+import Stopwatch from "./components/Stopwatch";
+import "./App.css";
 
-const App = () => {
-  const [dark, setDark] = useState(true);
-
+function App() {
   return (
-    <div className={dark ? 'app dark' : 'app light'}>
-      <button onClick={() => setDark(!dark)} className="toggle-theme">
-        {dark ? 'Light Mode' : 'Dark Mode'}
-      </button>
-      <Stopwatch />
+    <div className="App">
+      <div className="stopwatch-wrapper">
+        <div className="stopwatch-top-button" />
+        <Stopwatch />
+      </div>
+      <h2>STOPWATCH</h2>
+    
     </div>
   );
-};
+}
 
 export default App;
