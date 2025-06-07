@@ -105,7 +105,7 @@ const Stopwatch = () => {
         className="lap-list"
         ref={lapListRef}
         style={{
-          maxHeight: "80px",
+          maxHeight: "70px",
           overflowY: laps.length > 1 ? "auto" : "hidden",
         }}
       >
