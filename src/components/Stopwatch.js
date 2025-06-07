@@ -81,32 +81,32 @@ const Stopwatch = () => {
       <div className="stopwatch-time">{formatTime(time)}</div>
 
       {/* Controls */}
-        <div className="stopwatch-controls">
-  <button onClick={startStopwatch}>
-    ▶️
-    <div className="btn-label">Start</div>
-  </button>
-  <button onClick={pauseStopwatch}>
-    ⏸️
-    <div className="btn-label">Pause</div>
-  </button>
-  <button onClick={recordLap}>
-    📍
-    <div className="btn-label">Lap</div>
-  </button>
-  <button onClick={resetStopwatch}>
-    🔁
-    <div className="btn-label">Reset</div>
-  </button>
-</div>
+      <div className="stopwatch-controls">
+        <button onClick={startStopwatch}>
+          ▶️
+          <div className="btn-label">Start</div>
+        </button>
+        <button onClick={pauseStopwatch}>
+          ⏸️
+          <div className="btn-label">Pause</div>
+        </button>
+        <button onClick={recordLap}>
+          📍
+          <div className="btn-label">Lap</div>
+        </button>
+        <button onClick={resetStopwatch}>
+          🔁
+          <div className="btn-label">Reset</div>
+        </button>
+      </div>
 
       {/* Lap List */}
       <ul
         className="lap-list"
         ref={lapListRef}
         style={{
-          maxHeight: laps.length > 3 ? "100px" : "auto",
-          overflowY: laps.length > 3 ? "auto" : "hidden",
+          maxHeight: "80px",
+          overflowY: laps.length > 1 ? "auto" : "hidden",
         }}
       >
         {laps.map((lap, index) => (
