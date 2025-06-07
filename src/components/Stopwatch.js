@@ -90,9 +90,9 @@ const Stopwatch = () => {
           ⏸️
           <div className="btn-label">Pause</div>
         </button>
-        <button onClick={recordLap}>
+        <button onClick={recordLap} disabled={!running}>
           📍
-          <div className="btn-label">Lap</div>
+         <div className="btn-label">Lap</div>
         </button>
         <button onClick={resetStopwatch}>
           🔁
